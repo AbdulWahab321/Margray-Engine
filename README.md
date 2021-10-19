@@ -1,6 +1,5 @@
 # Note
 Please Make sure that folder named margray is in your project directory
-I could'nt upload this project to Pypi for some reason
 # Margray Game Engine
 Margray game engine is a library based on Pygame and very easy to learn
 ## Margray game engine basics
