@@ -7,7 +7,7 @@ pip install margray_engine
 ## Margray game engine basics
 #### Creating a window
 ```python
-from  margray  import *
+from  margray_engine  import *
 
  
 engine = MargrayGameEngine()
@@ -23,7 +23,7 @@ while  True:
 ```
 **OR**
 ```python
-from  margray  import *
+from  margray_engine  import *
 
  
 engine = MargrayGameEngine()
@@ -41,7 +41,7 @@ while  True:
 
 #### Creating a Sprite
 ```python
-from  margray  import *
+from  margray_engine  import *
 
  
 engine = MargrayGameEngine()
@@ -65,7 +65,7 @@ while  True:
 ```
 #### Creating a Sprite with Image
 ```python
-from  margray  import *
+from  margray_engine  import *
 
 
 IMAGE_PATH = ""  # Your image path
@@ -94,7 +94,7 @@ while  True:
 ```
 #### Creating an Animated sprite
 ```python
-from  margray  import *
+from  margray_engine  import *
 
   
 
