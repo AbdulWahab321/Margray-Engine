@@ -1,9 +1,5 @@
 # Margray Game Engine
 Margray game engine is a library based on Pygame and very easy to learn
-## Installation
-```powershell
-pip install margray_engine
-```
 ## Margray game engine basics
 #### Creating a window
 ```python
