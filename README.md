@@ -3,7 +3,7 @@ Margray game engine is a library based on Pygame and very easy to learn
 ## Margray game engine basics
 #### Creating a window
 ```python
-from  margray_engine  import *
+from  margray  import *
 
  
 engine = MargrayGameEngine()
@@ -61,7 +61,7 @@ while  True:
 ```
 #### Creating a Sprite with Image
 ```python
-from  margray_engine  import *
+from  margray  import *
 
 
 IMAGE_PATH = ""  # Your image path
@@ -90,7 +90,7 @@ while  True:
 ```
 #### Creating an Animated sprite
 ```python
-from  margray_engine  import *
+from  margray  import *
 
   
 
