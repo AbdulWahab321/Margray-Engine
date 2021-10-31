@@ -9,33 +9,29 @@ pip install margray-2d
 ## Margray game engine basics
 #### Creating a window
 ```python
-from  margray  import *
+from margray_2d import *
 
- 
 engine = MargrayGameEngine()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
-  
-while  True:
-	for  ev  in  engine.run(): # engine.run() returns events passed to the window
+while True:
+	for ev in engine.run(): # engine.run() returns events passed to the window
 		event = Events(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 	engine.update() # Make sure to update the game All the time
 ```
 **OR**
 ```python
-from  margray_engine  import *
+from margray_2d import *
 
  
 engine = MargrayGameEngine()
 
 window = engine.create_screen((1000,500)) # Create the window with the resolution 1000x500
 
-  
-
-while  True:
-	for  ev  in  engine.run(): # engine.run() returns events passed to the window
+while True:
+	for ev in engine.run(): # engine.run() returns events passed to the window
 		event = Events(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 	engine.update() # Make sure to update the game All the time
@@ -43,23 +39,19 @@ while  True:
 
 #### Creating a Sprite
 ```python
-from  margray_engine  import *
+from margray_2d import *
 
  
 engine = MargrayGameEngine()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
-  
-
 # The 1st parameter is the Color and 2nd is the Position and 3rd is the Size
 
 sprite = engine.sprite((255,255,255),(100,100),(75,75)) # Creating the sprite
 
-  
-
-while  True:
-	for  ev  in  engine.run(): # engine.run() returns events passed to the window
+while True:
+	for ev in engine.run(): # engine.run() returns events passed to the window
 		event = Events(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 	sprite.draw() # Drawing the sprite
@@ -67,7 +59,7 @@ while  True:
 ```
 #### Creating a Sprite with Image
 ```python
-from  margray  import *
+from margray_2d import *
 
 
 IMAGE_PATH = ""  # Your image path
@@ -76,17 +68,12 @@ engine = MargrayGameEngine()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
-  
-
 # The 1st parameter is the Image path and 2nd is X position and 3rd is Y position and 4th is Size
 
 sprite = engine.image_sprite(IMAGE_PATH,100,100,(50,50)) # Creating the image sprite
 
-  
-  
-
-while  True:
-	for  ev  in  engine.run(): # engine.run() returns events passed to the window
+while True:
+	for ev in engine.run(): # engine.run() returns events passed to the window
 		event = Events(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 		
@@ -96,7 +83,7 @@ while  True:
 ```
 #### Creating an Animated sprite
 ```python
-from  margray  import *
+from margray_2d import *
 
   
 
@@ -106,14 +93,11 @@ engine = MargrayGameEngine()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
-  
-
 # The 1st parameter is the images and 2nd is the X position and 3rd is the Y position and 4th is size and the startingIndex (in which index should the image start)
 
 animated_sprite = engine.animated_sprite(IMAGES,50,50,(25,25),0)
-
-while  True:
-	for  ev  in  engine.run(): # engine.run() returns events passed to the window
+while True:
+	for ev in engine.run(): # engine.run() returns events passed to the window
 		event = Events(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 		
