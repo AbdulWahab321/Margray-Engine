@@ -20,7 +20,7 @@ while True:
 from margray_2d import *
 
  
-engine = MargrayGameEngine()
+engine = Margray()
 
 window = engine.create_screen((1000,500)) # Create the window with the resolution 1000x500
 
