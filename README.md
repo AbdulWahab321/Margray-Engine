@@ -5,13 +5,13 @@ Margray game engine is a library based on Pygame and very easy to learn
 ```python
 from margray_2d import *
 
-engine = MargrayGameEngine()
+engine = Margray()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
 while True:
 	for ev in engine.run(): # engine.run() returns events passed to the window
-		event = Events(ev)
+		event = EventHandler(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 	engine.update() # Make sure to update the game All the time
 ```
@@ -26,7 +26,7 @@ window = engine.create_screen((1000,500)) # Create the window with the resolutio
 
 while True:
 	for ev in engine.run(): # engine.run() returns events passed to the window
-		event = Events(ev)
+		event = EventHandler(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 	engine.update() # Make sure to update the game All the time
 ```
@@ -36,7 +36,7 @@ while True:
 from margray_2d import *
 
  
-engine = MargrayGameEngine()
+engine = Margray()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
@@ -46,7 +46,7 @@ sprite = engine.sprite((255,255,255),(100,100),(75,75)) # Creating the sprite
 
 while True:
 	for ev in engine.run(): # engine.run() returns events passed to the window
-		event = Events(ev)
+		event = EventHandler(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 	sprite.draw() # Drawing the sprite
 	engine.update()
@@ -58,7 +58,7 @@ from margray_2d import *
 
 IMAGE_PATH = ""  # Your image path
 
-engine = MargrayGameEngine()
+engine = Margray()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
@@ -68,7 +68,7 @@ sprite = engine.image_sprite(IMAGE_PATH,100,100,(50,50)) # Creating the image sp
 
 while True:
 	for ev in engine.run(): # engine.run() returns events passed to the window
-		event = Events(ev)
+		event = EventHandler(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 		
 	sprite.draw() # Drawing the image sprite
@@ -83,7 +83,7 @@ from margray_2d import *
 
 IMAGES = ["image1","image2","image3","image4","image5","image6","image7"] # Your image path
 
-engine = MargrayGameEngine()
+engine = Margray()
 
 window = engine.create_screen("1000x500") # Create the window with the resolution 1000x500
 
@@ -92,7 +92,7 @@ window = engine.create_screen("1000x500") # Create the window with the resolutio
 animated_sprite = engine.animated_sprite(IMAGES,50,50,(25,25),0)
 while True:
 	for ev in engine.run(): # engine.run() returns events passed to the window
-		event = Events(ev)
+		event = EventHandler(ev)
 		event.enableAutoQuit(engine) # Automatically Quites if the user clickes the "X" button
 		
 	animated_sprite.draw() # Drawing the Sprite
